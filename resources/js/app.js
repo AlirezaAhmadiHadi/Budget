@@ -123,7 +123,8 @@ var UIController = (function () {
         incomeLabel: '.budget__income--value',
         expensesLabel: '.budget__expenses--value',
         percentageLabel: '.budget__expenses--percentage',
-        container: '.container'
+        container: '.container',
+        month: '.budget__title--month',
     };
 
     return {
@@ -179,6 +180,7 @@ var UIController = (function () {
 
         displayBudget: function (obj) {
 
+            document.querySelector(DOMStrings.month).textContent = "April";
             document.querySelector(DOMStrings.budgetLabel).textContent = obj.budget;
             document.querySelector(DOMStrings.incomeLabel).textContent = obj.totalInc;
             document.querySelector(DOMStrings.expensesLabel).textContent = obj.totalExp;
