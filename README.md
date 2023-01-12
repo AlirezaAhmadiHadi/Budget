@@ -1,6 +1,6 @@
 # Budget
 
-
+A full Budget Manager with nice User interface.
 
 ## Introduction
 
